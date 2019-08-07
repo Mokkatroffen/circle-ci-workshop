@@ -4,9 +4,9 @@ jobs:
     docker:
       - image: circleci/openjdk:8-jdk
     steps:
-      - store_test_results:
-          path: build/test-results
       - checkout:
       - run:
           command: gradle test
           name: "The First Step"
+      - store_test_results:
+          path: build/test-results
