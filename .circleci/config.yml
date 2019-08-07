@@ -5,6 +5,6 @@ jobs:
       - image: "circleci/openjdk:8-jdk"
     steps:
       - checkout:
-          - run:
-              command: test
-              name: "The First Step"
+      - run:
+          command: test
+          name: "The First Step"
